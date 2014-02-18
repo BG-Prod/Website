@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset=utf-8>
+    <title> BG PROD </title>
+    <link rel="shortcut icon" type="image/png" href="./ressources/icon.png" />
+  </head>
+
+<body>
+    <header>
+      <h1> BG PROD </h1>
+      <figure> <img src="ressources/logo.png" title="Logo de BGPROD" alt="L'image est morte, je rigole !"/> </figure>
+      <nav>
+	  <a href="./index.html"> Accueil </a>
+	  <a href="./jeux.html"> Jeux </a>
+	  <a href="./pic.html"> Pic </a>
+	  <a href="./bgprof.html"> BG PROF </a>
+      </nav>
+    </header>
+
+  <section>
+    <article>
+      <h1> Présentation </h1>
+	<p> Ceci est le texte de présentation </p>
+    </article>
+
+    <article>
+      <h1> Jeux </h1>
+	<p> Depuis ses origines, BG PROD produit et encourage la création de jeux vidéos indépendants. Ils sont à l'origine de nombreux jeux incontournables. Vous trouverez des jeux exceptionnels, des jeux incloyables, des jeux fabuleux. Vous trouverez notamment :</p>
+	  <ul>
+	    <li> <strong>Draughts</strong> : le jeux de dame </li>
+	    <li> <strong>The Arvernes</strong> : le jeu de cartes le plus populaire au monde </li>
+	  </ul> 
+    </article>
+
+    <article>
+      <h1> Pic </h1>
+	<p>
+	  Dans le cadre de la <em>Prep' ISIMA</em>, il nous a été demandé d'effectuer de la <strong>programmation sur carte Pic</strong>, et notamment de réaliser des jeux de lumière.
+	  Pour le moment, nous avons réussi a :</p>
+	    <ul>
+	      <li> Créer un compte de 0 à 9 secondes </li>
+	      <li> Afficher une image sur un écran LCD </li>
+	    </ul>
+    </article>
+
+    <article>
+      <h1> BG PROF </h1>
+	<p> En plus d'encourager la création de jeux vidéos et développer des applications sur des supports innovants comme le pic, BG PROD propose aussi un programme educatif permettant à la jeunesse de s'entrainer aisément aux rudiments de la conjugaison et du calcul mental.</p>
+    </article>
+  </section>
+
+  <aside>
+    BG PROD créée par Benjamin et Benoît.
+  </aside>
+  
+  <footer>
+    <p>Créé par Benjamin et Benoît.</p>
+  </footer>
+
+  </body>
+</html>

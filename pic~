@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset=utf-8>
+    <title> BG PROD > Pic </title>
+  </head>
+
+<body>
+    <header>
+      <h1> BG PROD </h1>
+      <figure> <img src="ressources/logo.png" height="100" title="Logo de BGPROD" alt="L'image est morte, je rigole !"/> </figure>
+      <nav>
+	  <a href="./index"> Accueil </a>
+	  <a href="./jeux"> Jeux </a>
+	  <a href="./pic"> Pic </a>
+	  <a href="./bgprof"> BG PROF </a>
+      </nav>
+    </header>
+
+  <section>
+  </section>
+
+  <aside>
+    BG PROD créée par Benjamin et Benoît.
+  </aside>
+  
+  <footer>
+    <p>Crée par Bejamin et Benoît.</p>
+  </footer>
+
+  </body>
+</html>
