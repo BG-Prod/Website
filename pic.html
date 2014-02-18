@@ -5,6 +5,7 @@
   <head>
     <meta charset=utf-8>
     <title> BG PROD > Pic </title>
+	<link rel="shortcut icon" type="fluid-icon" href="./ressources/icon.png" />
   </head>
 
 <body>
@@ -20,6 +21,17 @@
     </header>
 
   <section>
+	  <p>
+			Nous nous sommes mis à travailler sur le projet le mardi 21 janvier mais jusqu’au jeudi 23 nous ne sommes pas parvenus à faire fonctionner l'exemple LedBlinking. Nous avons installé le driver ainsi que les programmes associés : mikroProg Suite For PIC qui est une interface avec la carte et mikroC PRO for PIC qui est notre IDE. Ensuite nous avons ouvert le projet LedBlinking, puis changé la montre (20Mhz) et changé le modèle (P18F452). Au branchement de la carte les voyants POWER et USB se sont allumés et une faible lueur a jaillit d'une des LED de la matrice. Lorsque nous avons chargé le programme sur le MCU cette LED "défectueuse" clignote une fois très faiblement sans qu'il ne se passe quoi que ce soit. 
+			Pour essayer de trouver la source du problème nous avons essayé de changer le type de MCU mais le logiciel nous dit bien que le bon est le P18F452, nous avons changé de PC (OS plutôt) pensant que c'était dû à un problème de driver, nous avons essayé avec tout un tas d'autres programme, etc.
+			<figure> <img src="ressources/pic001.jpg" title="Chiffre 3 sur matrice de LED" alt="L'image est morte, je rigole !"/> <figcaption>Affichage du chiffre 3 sur la matrice de LED. </figcaption></figure>
+			Lorsque l'on s’est documenté sur internet, nous avons bien vu qu'une simple « compilation écriture » ou pression sur Ctrl+F11 devait suffire à faire tout le travail mais chez nous la partie logicielle ne renvoie aucune erreur et la partie matérielle ne répond pas (hormis un sursaut faible de la LED faiblement allumée).
+			Nous nous sommes donc rendu dans le local d’ISIBOT et les conclusions ont été rapides : le EasyPIC 4 était défectueux, nous en avons donc reçu une nouvelle ainsi qu’un nouveau quartz de 8Mhz par la même occasion. Nous nous sommes ainsi lancés dans la programmation le jeudi 23 janvier.
+			Nous nous sommes ainsi lancés dans l’élaboration de notre alphabet numérique et avons ainsi pu découvrir le fonctionnement pratique de la matrice de diodes.  Après avoir déterminé un style adapté à la matrice 4*8 pour chaque chiffre nous les avons codés et testés. Tout fonctionnait parfaitement excepté les LED RA4, RA6 et RA7. Effectivement RA6 et RA7 sont utilisées pour l’oscillateur et non pour les entrées/sorties. On nous a donc conseillé de considérer ces LED comme des « pixel mort » et de faire comme s’ils fonctionnaient mais nous avons continué à chercher un moyen d’utiliser ces LED. Ainsi nous avons pu mettre en place un programme de compte et de décompte de 0 à 9 secondes.
+			Nous nous sommes ensuite intéressés au reste du matériel et avons aussi réussi à faire afficher le logo de l’ISIMA sur l’écran GLCD.
+			<figure> <img src="ressources/pic000.jpg" title="Logo de l'ISIMA" alt="L'image est morte, je rigole !"/> <figcaption>Le logo de l'ISIMA sur le GLCD.</figcaption> </figure>
+
+	  </p>
   </section>
 
   <aside>
