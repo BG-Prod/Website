@@ -100,8 +100,21 @@ p
 
 img
 {
+	width:100px;
+	height:100;
+}
+
+.logo
+{
 	width:60px;
 	height:auto;
+}
+
+.illustration
+{
+	float: left;
+	height: 100px;
+	width: 100px;
 }
 
 h1
