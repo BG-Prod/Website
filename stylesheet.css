@@ -48,28 +48,10 @@ table {
 										*
 *****************************************/
 
-body
-{
-	background-color:lightgrey;
-	margin:auto;
-	width:1280px;
-}
-
 .principal
 {
 	width:1080px;
-}
-
-.gauche
-{
-	width:200px;
-}
-
-#titre
-{
-	color:blue;
-	font-size:48px;
-	text-align:center;
+	margin-left:200px;
 }
 
 aside
@@ -81,10 +63,30 @@ aside
 	background-color:grey;
 	color:white;
 	
-	position:fixed;	top:300px; left:-175px;
-	float: left;
 	padding:5px;
 	text-align:justify;
+}
+
+.gauche
+{
+	width:140px;
+	position:fixed;	top:100px;
+	margin-left:30px;	margin-right:30px;
+}
+
+body
+{
+	background-color:lightgrey;
+	margin:auto;
+	width:1280px;
+}
+
+#titre
+{
+	color:blue;
+	font-size:48px;
+	text-align:center;
+	
 }
 
 p
