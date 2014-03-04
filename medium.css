@@ -1,4 +1,16 @@
 .principal
 {
-	width:auto;
+	width:640px;
+	margin-left:0px;
+}
+
+body
+{
+	margin:auto;
+	width:640px;
+}
+
+aside 
+{ 
+    display:none;
 }
