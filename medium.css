@@ -14,3 +14,8 @@ aside
 { 
     display:none;
 }
+
+a:hover
+{
+	transform: rotate(180de);
+}
