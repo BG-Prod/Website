@@ -64,19 +64,56 @@ table {
 nav a
 {
 	font-size:24px;
+	text-decoration:none;
 	font-weight:bold;
+	color:black;
 
 	background-image:linear-gradient(white,#47A3FF);
+	box-shadow:5px 5px 8px #3F4247;
 	
 	border:1px solid black;
 	padding:5px;
 }
 
-nav a:hover{background-image:linear-gradient(white, #A2D1FF);}
+nav a:hover
+{
+	background-image:linear-gradient(white, #A2D1FF);
+}
 
 header
 {
 	height:auto;
+}
+
+footer
+{
+	position: fixed;
+	bottom: 0px;
+	height:2em;
+	
+	text-align:center;
+	
+	transition-properties: background-color, height;
+	transition-duration: 0s, 2s;
+}
+
+.hideout
+{
+	color:black;
+	border:1px, solid, black;
+	border-radius:7px;
+}
+
+footer:hover
+{
+	footer p > color:white;
+	
+	height:4em;
+	background-image:linear-gradient(white, blue);
+	
+	border-radius:10px;
+	
+	transition-duration:2s;
 }
 
 aside
@@ -137,7 +174,7 @@ body
 p
 {
 	margin-top:10px;
-	border:1px solid black;
+	/*border:1px solid black;*/
 	
 	padding-left:5px;	padding-right:5px;
 	text-align:justify;
