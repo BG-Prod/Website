@@ -11,9 +11,9 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
 	font-size: 100%;
 	font-family:"Arial", Helvetica, sans-serif  ;
 	vertical-align: baseline;
@@ -91,7 +91,7 @@ footer
 	bottom: 0px;
 	height:2em;
 	
-	text-align:center;
+	background-color:#FFFFEB;
 	
 	transition-properties: background-color, height;
 	transition-duration: 0s, 2s;
@@ -109,9 +109,7 @@ footer:hover
 	footer p > color:white;
 	
 	height:4em;
-	background-image:linear-gradient(white, blue);
-	
-	border-radius:10px;
+	background-image:linear-gradient(white, lightblue);
 	
 	transition-duration:2s;
 }
@@ -134,6 +132,7 @@ body
 {
 	background-color:#FFFFEB;
 	margin:auto;
+	margin-bottom:2em;
 	width:1280px;
 }
 
@@ -169,6 +168,21 @@ body
 	background-image:radial-gradient(circle,#47A3FF, white);
 	border: 0px solid black;
 	border-radius:12px;
+}
+
+#info
+{
+		font-weight:bold;
+}
+
+ul
+{
+	margin-left:40px;
+}
+
+ul li
+{
+	list-style-type: circle;
 }
 
 p
