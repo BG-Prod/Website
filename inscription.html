@@ -17,7 +17,7 @@
 
 <body>
   <aside class="gauche">
-      <p> Vous êtes à l'<strong> Accueil </strong> </p>
+      <p> Vous êtes dans la rubrique <strong> Inscription </strong> </p>
 	  <p> Style Normal </p>
 	  <p> Style Alternatif </p>
 	<figure>
@@ -40,13 +40,13 @@
 	<div class="principal">
 	  <section>
 		<form name="Inscription" action="mailto:bgprod@outlook.com" method="post">
-			<p><label for="lastname">Nom : </label><input type="text" id="lastname" name="lastname" size="32" maxlength="32" value="Name"> </p> 
-			<p><label for="firstname">Prénom : </label><input type="text" id="firstname" name="firstname" size="32" maxlength="32" value="First Name"> </p> 
-			<p><label for="birthdate">Date de naissance : </label><input type="date" id="birthdate" name="birthdate" size="32" maxlength="32" value="11/03/1993">
-			<p><label for="useremail">Adresse em@il : </label><input type="text" id="useremail" name="useremail" size="32" maxlength="32" value="aaaaa@bbb.cc"> </p> 
-			<p><label for="username">Nom d'utilisateur : </label><input type="text" id="username" name="username" size="32" maxlength="32" value="User Name"> </p> 
-			<p><label for="userpwd">Mot de passe : </label><input type="password" id="userpwd" name="userpwd" size="32" maxlength="32" value="password"> </p> 
-			<p><label for="userpwdconf">Confirmation de mot de passe : </label><input type="password" id="userpwdconf" name="userpwdconf" size="32" maxlength="32" value="password"> </p> 
+			<p><label for="lastname">Nom : </label><input type="text" id="lastname" name="lastname" size="32" maxlength="32" placeholder="Name"> </p> 
+			<p><label for="firstname">Prénom : </label><input type="text" id="firstname" name="firstname" size="32" maxlength="32" placeholder="First Name"> </p> 
+			<p><label for="birthdate">Date de naissance : </label><input type="date" id="birthdate" name="birthdate" size="32" maxlength="32" placeholder="11/03/1993">
+			<p><label for="useremail">Adresse em@il : </label><input type="text" id="useremail" name="useremail" size="32" maxlength="32" placeholder="aaaaa@bbb.cc"> </p> 
+			<p><label for="username">Nom d'utilisateur : </label><input type="text" id="username" name="username" size="32" maxlength="32" placeholder="User Name"> </p> 
+			<p><label for="userpwd">Mot de passe : </label><input type="password" id="userpwd" name="userpwd" size="32" maxlength="32" placeholder="password"> </p> 
+			<p><label for="userpwdconf">Confirmation de mot de passe : </label><input type="password" id="userpwdconf" name="userpwdconf" size="32" maxlength="32" placeholder="password"> </p> 
 			
 			<p><INPUT TYPE="submit" VALUE="Envoyer">
 			<INPUT TYPE="reset" VALUE="Effacer"></p>
@@ -54,9 +54,10 @@
 	  </section>
 	</div>
 	
-  <footer>
-    <p>Créé par Benjamin et Benoît.</p>
-  </footer>
+    <footer class="principal">
+		<p id="info"> Informations </p>
+      <p>Site web créé par Benjamin et Benoît pour le TP de web de la L2 Informatique afin de présenter leur projets communs.</p>
+    </footer>
 
   </body>
 </html>
