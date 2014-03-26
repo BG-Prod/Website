@@ -61,6 +61,13 @@ table {
 	margin-right:30px;
 }
 
+.mainPage
+{
+	background-color:#CCDDFF;
+	position: absolute; 
+	height:100%;
+}
+
 nav
 {
 	margin-top:0px;
@@ -95,6 +102,7 @@ nav ul li a {
 	border:2px solid;
 	border-color:#DCDCDC #696969 #696969 #DCDCDC;
 }
+
 nav ul li a:hover {
 	background-image:linear-gradient(white, #A2D1FF);
 	
