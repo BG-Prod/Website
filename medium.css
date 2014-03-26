@@ -11,6 +11,11 @@ body
 	margin-bottom:2em;
 }
 
+nav ul li a
+{
+	width:85px;
+}
+
 aside 
 { 
     display:none;

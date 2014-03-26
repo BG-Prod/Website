@@ -42,11 +42,11 @@ table {
 	border-spacing: 0;
 }
 
-/****************************************
-										*
-	Nous commencons ici	   				*
-										*
-*****************************************/
+/****************************
+*							*
+*	Definition des styles	*
+*							*
+*****************************/
 
 .principal
 {
@@ -61,28 +61,50 @@ table {
 	margin-right:30px;
 }
 
-nav a
+nav
 {
-	font-size:18px;
-	text-decoration:none;
-	font-weight:bold;
-	color:black;
+	margin-top:0px;
+	height:2em;
+}
 
-	background-image:linear-gradient(white,#47A3FF);
-	box-shadow:5px 5px 8px #3F4247;
-	
-	border:1px solid black;
+nav ul {
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+}
+nav li {
+	margin-left:2px;
+	float:left;
+}
+nav ul li a {
+	display:block;
+	float:left;
+	width:100px;
 	padding:5px;
-}
+	background-image:linear-gradient(white,#47A3FF);
+	
+	line-height:20px;
+	
+	color:black;
+	font-weight:bold;
+	font-size:16px;
+	text-decoration:none;
+	text-align:center;
 
-nav a:hover
-{
+	/*Effet 3d*/
+	border:2px solid;
+	border-color:#DCDCDC #696969 #696969 #DCDCDC;
+}
+nav ul li a:hover {
 	background-image:linear-gradient(white, #A2D1FF);
+	
+	/* Modification de l'effet de bordures */
+	border-color:#696969 #DCDCDC #DCDCDC #696969;
 }
 
-nav a:active
+.noFloat
 {
-	color:white;
+	float:none;
 }
 
 header
@@ -96,21 +118,21 @@ footer
 	bottom: 0px;
 	height:2em;
 	
-	background-color:#FFFFEB;
-	
+	background-color:rgba(255, 255, 255, 0.7);
 	transition-properties: background-color, height;
-	transition-duration: 0s, 2s;
+	transition-duration: 1s, 2s;
 }
 
 footer:hover
 {
 	footer p > color:white;
-	opacity:1;
+	
+	background-color:rgba(255, 255, 255, 1);
 	
 	height:6em;
 	background-image:linear-gradient(white, lightblue);
 	
-	transition-duration:2s;
+	transition-duration:1s, 2s;
 }
 
 aside
@@ -142,6 +164,11 @@ body
 	width:1280px;
 }
 
+section
+{
+	margin-top:10px;
+}
+
 .logo
 {
 	position:absolute;
@@ -170,35 +197,12 @@ body
 	width: 100px;
 }
 
-#titre
-{
-	margin-bottom:25px;
-	height:100px;
-		
-	color:white;
-	font-size:52px;
-	line-height:100px;
-	text-align:center;
-	vertical-align:middle;
-	text-shadow: 5px 5px 8px #3F4247;
-	
-	background-color:#47A3FF;
-	/*background-image:radial-gradient(circle,#47A3FF, white);*/
-	border: 0px solid black;
-	border-radius:12px;
-}
-
-#info
-{
-	font-weight:bold;
-}
-
-ul
+section ul
 {
 	margin-left:40px;
 }
 
-ul li
+section ul li
 {
 	list-style-type: circle;
 }
@@ -210,7 +214,6 @@ p
 	
 	padding-left:5px;	padding-right:5px;
 	
-	text-indent:2em;
 	text-align:justify;
 }
 
@@ -243,6 +246,11 @@ article
 	margin-top:20px;
 }
 
+article p
+{
+	text-indent:2em;
+}
+
 .arround
 {
 	float:right;
@@ -261,4 +269,55 @@ figcaption
 	font-style:oblique;
 	font-size:14px;
 	color:#47A3FF;	
+}
+
+table
+{
+	border-collapse:collapse;
+}
+
+table, th, td
+{
+	text-align:center;
+	border: 1px solid black;
+}
+
+table th
+{
+	padding:5px;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+table td
+{
+	padding:1px;
+}
+
+.activeSmall
+{
+	display:none;
+}
+
+#titre
+{
+	margin-bottom:25px;
+	height:100px;
+		
+	color:white;
+	font-size:52px;
+	line-height:100px;
+	text-align:center;
+	vertical-align:middle;
+	text-shadow: 5px 5px 8px #3F4247;
+	
+	background-color:#47A3FF;
+	/*background-image:radial-gradient(circle,#47A3FF, white);*/
+	border: 0px solid black;
+	border-radius:12px;
+}
+
+#info
+{
+	font-weight:bold;
 }
