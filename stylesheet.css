@@ -80,6 +80,11 @@ nav a:hover
 	background-image:linear-gradient(white, #A2D1FF);
 }
 
+nav a:active
+{
+	color:white;
+}
+
 header
 {
 	height:auto;
@@ -204,12 +209,14 @@ p
 	/*border:1px solid black;*/
 	
 	padding-left:5px;	padding-right:5px;
+	
+	text-indent:2em;
 	text-align:justify;
 }
 
 em
 {
-	color:red;
+	color:#0065AD;
 }
 
 strong
@@ -219,15 +226,15 @@ strong
 
 img
 {
-	width:100px;
-	height:100px;
+	width:200px;
+	height:auto;
 }
 
 h1
 {
 	height:20px;
 	width:auto;
-	color:red;
+	color:#47A3FF;
 	font-size:20px;
 }
 
@@ -236,7 +243,22 @@ article
 	margin-top:20px;
 }
 
+.arround
+{
+	float:right;
+	top:0px;
+	margin-left:10px;
+	margin-top:15px;
+	width : 200px;
+}
+
 figcaption
 {
-	color:red;	
+	position:relative;
+	top : 0px;
+	
+	text-align:center;
+	font-style:oblique;
+	font-size:14px;
+	color:#47A3FF;	
 }
