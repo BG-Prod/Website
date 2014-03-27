@@ -25,3 +25,13 @@ a:hover
 {
 	transform: rotate(180de);
 }
+
+footer
+{
+	max-width:640px;
+}
+
+footer:hover
+{
+	max-width:640px;
+}
