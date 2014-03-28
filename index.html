@@ -10,7 +10,8 @@
     <title> BG PROD > Accueil </title>
     <link id="logo" rel="shortcut icon" type="fluid-icon" href="./ressources/icon.png" />
 	
-	<link rel="stylesheet" href="./stylesheet/stylesheet.css" />
+	<link rel="stylesheet" title="Défaut" id="style" href="./stylesheet/stylesheet.css" />
+	<link rel="alternate stylesheet" title="Mode nuit" href="./stylesheet/stylesheet_nuit.css" />
 	<link rel="stylesheet" media="screen and (max-width: 1280px)" href="./stylesheet/medium.css" />
 	<link rel="stylesheet" media="screen and (max-width: 640px)" href="./stylesheet/small.css" />
   </head>
@@ -19,8 +20,9 @@
 <div class="mainPage">
   <aside class="gauche">
       <p> Vous êtes à l'<strong> Accueil </strong> </p>
-	  <p> Style Normal </p>
-	  <p> Style Alternatif </p>
+	  <h1> Style </h1>
+		  <p> <button id="styleNormal" onclick="javascript:styleDefault()"> Normal </button> </p>
+		  <p> <button id="styleNuit" onclick="javascript:styleNuit()"> Nuit </button> </p>
 	<figure>
 		<img class="logo" src="ressources/logo.png" title="Logo de BGPROD" alt="L'image est morte, je rigole !"/>
 	</figure>
@@ -83,4 +85,7 @@
 		</p>
     </footer>
 </body>
+
+	<script rel="javascript" src="./script/css.js"></script>
+
 </html>

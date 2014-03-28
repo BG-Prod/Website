@@ -69,7 +69,7 @@ html
 
 body
 {
-	background-image:linear-gradient(to top,#FFFFEB,#CCDDFF);
+	background-image:linear-gradient(black,#333333);
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-attachment:fixed;
@@ -86,7 +86,7 @@ body
 
 .mainPage
 {
-	background-color:rgba(175,200,205,0.5);
+	background-color:rgba(255, 255, 255, 0.1);
 	position: auto;
 	min-height:100%;
 	/*min-height:inherit;*/
@@ -112,11 +112,12 @@ nav ul li a {
 	float:left;
 	width:100px;
 	padding:5px;
-	background-image:linear-gradient(white,#47A3FF);
+	background-image:linear-gradient(#333333,black);
 	
 	line-height:20px;
 	
-	color:black;
+	color:gray;
+	/*text-shadow: 0px 0px 1px aqua;*/
 	font-weight:bold;
 	font-size:16px;
 	text-decoration:none;
@@ -128,10 +129,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	background-image:linear-gradient(white, #A2D1FF);
+	background-image:linear-gradient(gray, black);
+	
+	color:black;
 	
 	/* Modification de l'effet de bordures */
 	border-color:#696969 #DCDCDC #DCDCDC #696969;
+	box-shadow: 0px 0px 12px aqua;
 }
 
 header
@@ -147,7 +151,8 @@ footer
 	width:100%;
 	max-width:1280px;
 	
-	background-color:rgba(255, 255, 255, 0.7);
+	color:gray;
+	background-color:rgba(0, 0, 0, 0.7);
 	transition-properties: background-color, height;
 	transition-duration: 1s, 2s;
 }
@@ -155,8 +160,8 @@ footer
 footer:hover
 {
 	height:6em;
-	background-color:rgba(255, 255, 255, 1);
-	background-image:linear-gradient(white, lightblue);
+	background-color:rgba(0, 0, 0, 1);
+	background-image:linear-gradient(black, #333333);
 
 	max-width:1280px;
 	
@@ -172,8 +177,8 @@ aside
 	border:1px solid black;
 	border-radius:10px;
 	
-	background-color:#7EBFFF;
-	color:white;
+	background-color:black;
+	color:#47A3FF;
 	
 	padding:5px;
 	padding-top:0px;
@@ -236,6 +241,7 @@ section ul
 
 section ul li
 {
+	color:lightgray;
 	list-style-type: circle;
 }
 
@@ -243,7 +249,8 @@ p
 {
 	margin-top:10px;
 	padding-left:5px;	padding-right:5px;
-	/*border:1px solid black;*/
+	
+	color:lightgray;
 	
 	text-align:justify;
 }
@@ -256,8 +263,8 @@ em
 
 strong
 {
-	font-weight:strong;
-	color: #0065AD;
+	font-weight:bold;
+	color:#0065AD;
 }
 
 img
@@ -331,22 +338,15 @@ table td
 {
 	margin-bottom:25px;
 	height:100px;
-		
-	color:white;
+	
+	color:black;
+	text-shadow: 0px 0px 8px aqua;
 	font-size:52px;
 	line-height:100px;
 	text-align:center;
 	vertical-align:middle;
-	text-shadow: 5px 5px 8px #3F4247;
 	
-	
-	/*background-color:#47A3FF;*/
-		
-	background-color:white;
-	background:url(../ressources/title.png);
-	background-repeat:no-repeat;
-	
-	background-color:#47A3FF;
+	background-color:black;
 	border: 0px solid black;
 	border-radius:12px;
 }
