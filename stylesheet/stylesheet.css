@@ -332,7 +332,12 @@ table td
 	vertical-align:middle;
 	text-shadow: 5px 5px 8px #3F4247;
 	
-	background-color:#47A3FF;
+	/*background-color:#47A3FF;*/
+	
+	background-color:white;
+	background:url(../ressources/title.png);
+	background-repeat:no-repeat;
+	
 	border: 0px solid black;
 	border-radius:12px;
 }
