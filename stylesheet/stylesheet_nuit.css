@@ -345,6 +345,10 @@ table td
 	line-height:100px;
 	text-align:center;
 	vertical-align:middle;
+
+	background-color:white;
+	background:url(../ressources/title.png);
+	background-repeat:no-repeat;
 	
 	background-color:black;
 	border: 0px solid black;

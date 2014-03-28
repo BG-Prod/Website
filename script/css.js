@@ -1,11 +1,20 @@
+//Recuperation de la feuille de style
 var stylesheet = window.document.getElementById("style");
+
+//Bouton du style normal
+var button1 = window.document.getElementById("styleNormal");
+//button1.addEventListener('click', stylesheet.href = "./stylesheet/stylesheet.css", false);
+button1.onclick = styleDefault;
+
+//Bouton du style de nuit
+var button2 = window.document.getElementById("styleNuit");
+button2.onclick = styleNuit;
+
+//Fonctions de changement de style
+function styleNuit() {
+	stylesheet.href = "./stylesheet/stylesheet_nuit.css";
+}
 
 function styleDefault(){
 	stylesheet.href = "./stylesheet/stylesheet.css";
-	//document.styleSheets = "./stylesheet/stylesheet.css";
-}
-
-function styleNuit() {
-	stylesheet.href = "./stylesheet/stylesheet_nuit.css";
-	//document.styleSheets = "./stylesheet/stylesheet_nuit.css";
 }

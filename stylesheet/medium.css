@@ -16,6 +16,14 @@ nav ul li a
 	width:85px;
 }
 
+aside h1
+{
+	display:fixed;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
 aside 
 { 
     display:none;
