@@ -86,7 +86,6 @@ body
 .mainPage
 {
 	background-color: rgba(175,200,205,0.5);
-	position: auto;
 	min-height: 100%;
 }
 
@@ -146,8 +145,7 @@ footer
 	max-width: 1280px;
 	
 	background-color: rgba(255, 255, 255, 0.7);
-	transition-properties: background-color, height;
-	transition-duration: 1s, 2s;
+	transition-duration: 2s;
 }
 
 footer:hover
@@ -210,7 +208,6 @@ section
 	
 	opacity: 1;
 	
-	transition-properties: opacity;
 	transition-duration: 1s;
 }
 
@@ -254,7 +251,7 @@ em
 
 strong
 {
-	font-weight: strong;
+	font-weight: bold;
 	color: #0065AD;
 }
 

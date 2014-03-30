@@ -87,9 +87,7 @@ body
 .mainPage
 {
 	background-color:rgba(255, 255, 255, 0.1);
-	position: auto;
 	min-height:100%;
-	/*min-height:inherit;*/
 }
 
 nav
@@ -153,8 +151,7 @@ footer
 	
 	color:gray;
 	background-color:rgba(0, 0, 0, 0.7);
-	transition-properties: background-color, height;
-	transition-duration: 1s, 2s;
+	transition-duration: 2s;
 }
 
 footer:hover
@@ -217,7 +214,6 @@ section
 	
 	opacity:1;
 	
-	transition-properties:opacity;
 	transition-duration:1s;
 }
 
@@ -263,7 +259,7 @@ em
 
 strong
 {
-	font-weight:bold;
+	font-weight:strong;
 	color:#0065AD;
 }
 
