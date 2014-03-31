@@ -67,7 +67,17 @@ table td
 	padding:1px;
 }
 
+h1
+{
+	margin-bottom:1em;
+}
+
 #titre
 {
 	border-radius:0px;
+}
+
+.hide
+{
+	display:none;
 }

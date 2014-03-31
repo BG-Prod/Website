@@ -93,7 +93,7 @@ body
 nav
 {
 	margin-top:0px;
-	height:2em;
+	height: 2em;
 }
 
 nav ul {
@@ -171,7 +171,7 @@ aside
 	width:auto;
 	height:300px;
 	
-	border:1px solid black;
+	border:1px solid gray;
 	border-radius:10px;
 	
 	background-color:black;
