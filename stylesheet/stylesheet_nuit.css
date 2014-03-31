@@ -259,7 +259,7 @@ em
 
 strong
 {
-	font-weight:strong;
+	font-weight:bold;
 	color:#0065AD;
 }
 
@@ -342,12 +342,10 @@ table td
 	text-align:center;
 	vertical-align:middle;
 
-	background-color:white;
 	background:url(../ressources/title.png);
 	background-repeat:no-repeat;
 	
-	background-color:black;
-	border: 0px solid black;
+	border: 0px solid gray;
 	border-radius:12px;
 }
 
