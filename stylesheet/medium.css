@@ -4,6 +4,11 @@
 	margin-left:0px;
 }
 
+.gauche
+{
+	position: fixed;	top: 0px;
+}
+
 body
 {
 	margin:auto;
@@ -16,9 +21,26 @@ nav ul li a
 	width:85px;
 }
 
-aside 
-{ 
-    display:none;
+aside
+{
+	margin: 0px;
+	padding: 0px;
+	
+	background-color: transparent;
+	border: none;
+	
+	height: 100px;
+}
+
+aside figure, aside p
+{
+	display: none;
+}
+
+aside h1
+{
+	margin-top: auto;	margin-bottom: auto;	margin-bottom: 2px;
+	padding: 0px;
 }
 
 footer
