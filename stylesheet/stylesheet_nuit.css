@@ -379,7 +379,7 @@ tr:nth-child(even)
 	background-repeat:no-repeat;
 	
 	border: 0px solid gray;
-	border-radius:12px;
+	border-bottom-left-radius:12px;	border-bottom-right-radius: 12px;
 }
 
 #info
