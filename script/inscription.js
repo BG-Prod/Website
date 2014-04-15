@@ -7,11 +7,24 @@ var username = document.getElementById("username");
 var userpwd = document.getElementById("userpwd");
 var userpwdconf = document.getElementById("userpwdconf");
 
+// Boutons du formulaire
 var bEffacer = document.getElementById("effacer");
 bEffacer.addEventListener("click", function() {
 	for(var i = 0; i<document.getElementsByClassName("formulaire").length; i++) {
 		document.getElementsByClassName("formulaire")[i].setAttribute("src","");
 	}
+});
+
+var bEnvoyer = document.getElementById("envoyer");
+bEnvoyer.addEventListener("click", function() {
+	if(verifBirthDate && verifEmail && verifFirstName && verifLastName && verifPseudo && verifPwd && verifPwdConf) {
+		
+	}
+	else {
+		alert("Des champs sont encore faux !");
+	}
+
+
 });
 
 // Utilisation des fonctions
@@ -29,12 +42,12 @@ function verifLastName(){
 	if(name.test(lastname.value))
 	{
 		document.getElementsByClassName("formulaire")[0].setAttribute("src", "./ressources/ok.png");
-		// encadrer en vert
+		return true;
 	}
 	else
 	{
 		document.getElementsByClassName("formulaire")[0].setAttribute("src", "./ressources/false.png");
-		// encadrer en rouge
+		return false;
 	}
 }
 
@@ -43,10 +56,12 @@ function verifFirstName(){
 	if(name.test(firstname.value))
 	{
 		document.getElementsByClassName("formulaire")[1].setAttribute("src", "./ressources/ok.png");
+		return true;
 	}
 	else
 	{
 		document.getElementsByClassName("formulaire")[1].setAttribute("src", "./ressources/false.png");
+		return false;
 	}
 }
 
@@ -55,6 +70,7 @@ function verifBirthDate(){
 	
     if(!date.test(birthdate.value)){
 		document.getElementsByClassName("formulaire")[2].setAttribute("src", "./ressources/false.png");
+		return false;
 	}
     else{
         var tmp = birthdate.value.split('/');
@@ -65,9 +81,11 @@ function verifBirthDate(){
         correct.setDate(tmp[0]);
         if(correct.getFullYear()==tmp[2] && correct.getMonth()==tmp[1] && correct.getDate()==tmp[0]){
             document.getElementsByClassName("formulaire")[2].setAttribute("src", "./ressources/ok.png");
+			return true;
         }
         else{
             document.getElementsByClassName("formulaire")[2].setAttribute("src", "./ressources/false.png");
+			return false;
         }
     }
 }
@@ -77,10 +95,12 @@ function verifEmail(){
 	if(mail.test(useremail.value))
 	{
 		document.getElementsByClassName("formulaire")[3].setAttribute("src", "./ressources/ok.png");
+		return true;
 	}
 	else
 	{
 		document.getElementsByClassName("formulaire")[3].setAttribute("src", "./ressources/false.png");
+		return false;
 	}
 }
 
@@ -89,10 +109,11 @@ function verifPseudo(){
 	if(psd.test(username.value))
 	{
 		document.getElementsByClassName("formulaire")[4].setAttribute("src", "./ressources/ok.png");
+		return true;
 	}
 	else
 	{
-		document.getElementsByClassName("formulaire")[4].setAttribute("src", "./ressources/false.png");
+		document.getElementsByClassName("formulaire")[4].setAttribute("src", "./ressources/false.png");return false;
 	}
 }
 
@@ -109,10 +130,12 @@ function verifPwd(){
 	if(pwd.test(userpwd.value) && pwd2.test(userpwd.value) && pwd3.test(userpwd.value) && pwd4.test(userpwd.value))
 	{
 		document.getElementsByClassName("formulaire")[5].setAttribute("src", "./ressources/ok.png");
+		return true;
 	}
 	else
 	{
 		document.getElementsByClassName("formulaire")[5].setAttribute("src", "./ressources/false.png");
+		return false;
 	}
 }
 
@@ -120,10 +143,12 @@ function verifPwdConf(){
 	if(userpwd.value===userpwdconf.value)
 	{
 		document.getElementsByClassName("formulaire")[6].setAttribute("src", "./ressources/ok.png");
+		return true;
 	}
 	else
 	{
 		document.getElementsByClassName("formulaire")[6].setAttribute("src", "./ressources/false.png");
+		return false;
 	}
 }
 
