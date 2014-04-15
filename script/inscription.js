@@ -7,6 +7,13 @@ var username = document.getElementById("username");
 var userpwd = document.getElementById("userpwd");
 var userpwdconf = document.getElementById("userpwdconf");
 
+var bEffacer = document.getElementById("effacer");
+bEffacer.addEventListener("click", function() {
+	for(var i = 0; i<document.getElementsByClassName("formulaire").length; i++) {
+		document.getElementsByClassName("formulaire")[i].setAttribute("src","");
+	}
+});
+
 // Utilisation des fonctions
 lastname.onblur = verifLastName;
 firstname.onblur = verifFirstName;
@@ -21,12 +28,12 @@ function verifLastName(){
 	var name = /^[A-Z]{1}[a-zçîïéèàù]*([\s-][A-Z]{1}[a-zçîïéèàù]*)*$/
 	if(name.test(lastname.value))
 	{
-		throw new Error("OK");
+		document.getElementsByClassName("formulaire")[0].setAttribute("src", "./ressources/ok.png");
 		// encadrer en vert
 	}
 	else
 	{
-		throw new Error("Faux");
+		document.getElementsByClassName("formulaire")[0].setAttribute("src", "./ressources/false.png");
 		// encadrer en rouge
 	}
 }
@@ -35,13 +42,11 @@ function verifFirstName(){
 	var name = /^[A-Z]{1}[a-zçîïéèàù]*([\s-][A-Z]{1}[a-zçîïéèàù]*)*$/
 	if(name.test(firstname.value))
 	{
-		throw new Error("OK");
-		// encadrer en vert
+		document.getElementsByClassName("formulaire")[1].setAttribute("src", "./ressources/ok.png");
 	}
 	else
 	{
-		throw new Error("Faux");
-		// encadrer en rouge
+		document.getElementsByClassName("formulaire")[1].setAttribute("src", "./ressources/false.png");
 	}
 }
 
@@ -49,7 +54,7 @@ function verifBirthDate(){
 	var date = /^(\d{1,2}\/){2}\d{4}$/;
 	
     if(!date.test(birthdate.value)){
-		throw new Error('Date non valable !')
+		document.getElementsByClassName("formulaire")[2].setAttribute("src", "./ressources/false.png");
 	}
     else{
         var tmp = birthdate.value.split('/');
@@ -59,10 +64,10 @@ function verifBirthDate(){
         correct.setMonth(tmp[1]);
         correct.setDate(tmp[0]);
         if(correct.getFullYear()==tmp[2] && correct.getMonth()==tmp[1] && correct.getDate()==tmp[0]){
-            throw new Error("Date valable !");
+            document.getElementsByClassName("formulaire")[2].setAttribute("src", "./ressources/ok.png");
         }
         else{
-            throw new Error("Date non valable !");
+            document.getElementsByClassName("formulaire")[2].setAttribute("src", "./ressources/false.png");
         }
     }
 }
@@ -71,13 +76,11 @@ function verifEmail(){
 	var mail = /^[0-9a-zA-Z.-_]+@[0-9a-z.-_]+\.[a-z]{2,}$/;
 	if(mail.test(useremail.value))
 	{
-		throw new Error("OK");
-		// encadrer en vert
+		document.getElementsByClassName("formulaire")[3].setAttribute("src", "./ressources/ok.png");
 	}
 	else
 	{
-		throw new Error("Faux");
-		// encadrer en rouge
+		document.getElementsByClassName("formulaire")[3].setAttribute("src", "./ressources/false.png");
 	}
 }
 
@@ -85,13 +88,11 @@ function verifPseudo(){
 	var psd = /^[\w]{6,}$/;
 	if(psd.test(username.value))
 	{
-		throw new Error("OK");
-		// encadrer en vert
+		document.getElementsByClassName("formulaire")[4].setAttribute("src", "./ressources/ok.png");
 	}
 	else
 	{
-		throw new Error("Faux");
-		// encadrer en rouge
+		document.getElementsByClassName("formulaire")[4].setAttribute("src", "./ressources/false.png");
 	}
 }
 
@@ -107,26 +108,22 @@ function verifPwd(){
 	var pwd4 = /.*\d{1,}.*/;
 	if(pwd.test(userpwd.value) && pwd2.test(userpwd.value) && pwd3.test(userpwd.value) && pwd4.test(userpwd.value))
 	{
-		alert("OK");
-		// encadrer en vert
+		document.getElementsByClassName("formulaire")[5].setAttribute("src", "./ressources/ok.png");
 	}
 	else
 	{
-		alert("Faux");
-		// encadrer en rouge
+		document.getElementsByClassName("formulaire")[5].setAttribute("src", "./ressources/false.png");
 	}
 }
 
 function verifPwdConf(){
 	if(userpwd.value===userpwdconf.value)
 	{
-		alert("OK");
-		// encadrer en vert
+		document.getElementsByClassName("formulaire")[6].setAttribute("src", "./ressources/ok.png");
 	}
 	else
 	{
-		alert("Faux");
-		// encadrer en rouge
+		document.getElementsByClassName("formulaire")[6].setAttribute("src", "./ressources/false.png");
 	}
 }
 

@@ -380,3 +380,9 @@ tr:nth-child(even)
 	text-align: center;
 	font-weight: bold;
 }
+
+.formulaire
+{
+	height: 1em;
+	width: auto;
+}
