@@ -17,14 +17,12 @@ bEffacer.addEventListener("click", function() {
 
 var bEnvoyer = document.getElementById("envoyer");
 bEnvoyer.addEventListener("click", function() {
-	if(verifBirthDate && verifEmail && verifFirstName && verifLastName && verifPseudo && verifPwd && verifPwdConf) {
-		
+	if(verifBirthDate() && verifEmail() && verifFirstName() && verifLastName() && verifPseudo() && verifPwd() && verifPwdConf()) {
+		alert("Inscription réussie !");
 	}
 	else {
 		alert("Des champs sont encore faux !");
 	}
-
-
 });
 
 // Utilisation des fonctions
