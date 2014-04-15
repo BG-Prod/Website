@@ -4,6 +4,13 @@
 	margin-left:0px;
 }
 
+.mainPage
+{
+	/*new*/background: url(../ressources/newbgbybibi640.png);
+	background-repeat: no-repeat;
+	min-height: 10%;
+}
+
 .gauche
 {
 	position: absolute;	top: 0px;

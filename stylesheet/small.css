@@ -4,6 +4,14 @@
 	margin-left:0px;
 }
 
+.mainPage
+{
+	/* old -> background-color: rgba(175,200,205,0.5);*/
+	/*new*/background-image: url(../ressources/newbgbybibimini.png);
+	background-repeat: no-repeat;
+	min-height: 10%;
+}
+
 body
 {
 	margin:auto;

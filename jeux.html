@@ -5,11 +5,13 @@
 	<head>
 		<meta charset=utf-8>
 		<meta name="Author" content="Benjamin, Benoît">
-		<title> BG PROD > Jeux </title>
+		<title> BG PROD > Accueil </title>
 		<link rel="shortcut icon" type="icon/fluid-icon" href="./ressources/icon.png" />
 		
 		<link rel="stylesheet" title="Défaut" id="style" href="./stylesheet/stylesheet.css" />
 		<link rel="alternate stylesheet" title="Mode nuit" href="./stylesheet/stylesheet_nuit.css" />
+		<link rel="alternate stylesheet" title="Mode original" href="./stylesheet/stylesheet.css" />
+		<link rel="alternate stylesheet" title="Mode basic" href="./stylesheet/reset.css" />
 		<link rel="stylesheet" media="screen and (max-width: 1280px)" href="./stylesheet/medium.css" />
 		<link rel="stylesheet" media="screen and (max-width: 640px)" href="./stylesheet/small.css" />
 	</head>
@@ -17,11 +19,13 @@
 	<body>
 		<div class="mainPage">
 			<aside class="gauche">
-				<p> Vous êtes dans la rubrique <strong> Jeux </strong> </p>
+				<p> Vous êtes à l'<strong> Accueil </strong> </p>
 				<section>
-				<h1> Style </h1>
+					<h1> Style </h1>
 					<button id="styleNormal"> Normal </button>
 					<button id="styleNuit"> Nuit </button>
+					<button id="styleOrigin"> Original </button>
+					<button id="styleReset"> Aucun </button>
 				</section>
 				<figure>
 					<img class="logo" src="ressources/logo.png" title="Logo de BGPROD" alt="L'image est morte, je rigole !"/>
@@ -54,7 +58,7 @@
 						<p> Le code source du jeu est disponible <a href="https://github.com/BG-Prod/Games/tree/master/Draughts"> ici</a>.
 					</article>
 
-					<article id="arvernes">
+					<article>
 					<h1> <strong>The Arvernes</strong> : Jeu de cartes </h1>
 						<p> The Arvernes est un jeu de cartes comme Yu-Gi-Oh ou Magic plus simplifié. Chaque joueur commence avec 10 000 LP et le premier arrivé à 0 a perdu. Chaque joueur possède un deck aléatoire de 40 cartes. Les joueurs dépose leurs cartes sur le terrain puis une phase de résolution des combat commence au terme de laquelle les LP sont déduits chez chaque joueur. Le jeu comporte un éditeur de deck ainsi qu'un classement des records de points.</p>
 						<p> Le jeu dispose d'un editeur de deck, ce qui vous permet ainsi de créer votre propre jeu de carte et ainsi définir vos propres stratégies de jeu.Voici un tableau regroupant les cartes disponibles : </p>

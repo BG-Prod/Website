@@ -55,20 +55,15 @@ html
 
 .principal
 {
-	width: 1080px;
-	margin-left: 200px;
-}
-
-.gauche
-{
-	width: 160px;
-	position: fixed;	top: 100px;
-	margin-right: 30px;
+	width: 859px;
+	margin-left: 342px;
+	height: 0px;
 }
 
 body
 {
-	background-image: linear-gradient(to top,#FFFFEB,#CCDDFF);
+	background-color: #3fbdbd;
+	
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -84,13 +79,13 @@ body
 
 .mainPage
 {
-	background-color: rgba(175,200,205,0.5);
+	/*new*/background-image: url(../ressources/newbgbybibi.png);
+	background-repeat: no-repeat;
 	min-height: 100%;
+	max-height: 120%; /* à revoir */
 }
 
-nav
-{	
-	margin-top: 0px;
+nav{	
 	height: 2em;
 }
 
@@ -99,21 +94,22 @@ nav ul {
 	margin: 0px;
 	list-style-type: none;
 }
+
 nav li {
-	margin-left: 2px;
+	margin-right: 0px;
 	float: left;
 }
-nav ul li a 
-{
-	display: block;
+
+nav ul li a {
+	display: inline;
 	float: left;
-	width: 100px;
+	width: 200px;
 	padding: 5px;
-	background-image: linear-gradient(white,#47A3FF);
-	
-	line-height: 20px;
-	
-	color: black;
+	background-image: linear-gradient(#222222,#3fbdbd);
+
+	line-height: 2em;
+
+	color: #222222;
 	font-weight: bold;
 	font-size: 105%;
 	text-decoration: none;
@@ -126,14 +122,14 @@ nav ul li a
 
 nav ul li a:hover {
 	background-image: linear-gradient(white, #A2D1FF);
-	
+
 	/* Modification de l'effet de bordures */
 	border-color: #696969 #DCDCDC #DCDCDC #696969;
 }
 
 header
 {
-	height: auto;
+	height: 234px;
 }
 
 footer
@@ -161,16 +157,18 @@ footer:hover
 
 aside
 {
-	margin-top: 20px;
-	width: auto;
-	height: 300px;
-	
-	border: 1px solid black;
-	border-radius: 10px;
-	
-	background-color: #7EBFFF;
+	width: 226px;
+	position: fixed;
+	margin-left: 88px;
+	margin-top: 240px;
+
+	border: 5px solid black;
+	border-color: #DCDCDC #696969 #696969 #DCDCDC;
+	border-radius: 30px;
+
+	background-color: #3fbdbd;
 	color: white;
-	
+
 	padding: 5px;
 	padding-top: 0px;
 	text-align: center;
@@ -194,23 +192,27 @@ aside button
 
 section
 {
-	margin-top: 10px;
-	
 	/* Pour ne pas cacher ce qui serait tout en bas de la page
 	 * a cause du footer
 	 */
 	margin-bottom: 2em;
 }
 
+div.principal section
+{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+	
 .logo
 {
-	position: absolute;
+	/*position: absolute;*/
 	bottom: 0px;
 	left: 10px;
 	
 	width: 140px;
 	height: auto;
 	
+	text-align: center;
 	opacity: 1;
 	
 	transition-duration: 1s;
@@ -282,7 +284,7 @@ article h1
 
 article
 {
-	margin-top: 20px;
+	padding-top: 20px;
 }
 
 article p
@@ -313,55 +315,55 @@ figcaption
 
 table
 {
-	border-collapse: collapse;
+	border-collapse:collapse;
 	width: auto;
 	margin-top: 15px;	margin-bottom: 15px;
 	margin-left: auto;	margin-right: auto;
+	
+	color: gray;
 }
 
 table, th, td
 {
-	text-align: center;
+	text-align:center;
 	border: 1px solid black;
 }
 
 table th
 {
-	padding: 5px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding:5px;
+	padding-left:15px;
+	padding-right:15px;
 }
 
 table td
 {
-	padding: 1px;
+	padding:1px;
 }
 
 tr:nth-child(odd)
 {
-	background: #CBE7F2;
+	background: #1F1F1F;
 }
 
 tr:nth-child(even)
 {
-	background: #FFFFAA;
+	background: #0F0F0F;
 }
 
 #titre
 {
-	margin-bottom: 25px;
-	height: 100px;
-		
+	height: 185px;
+	width: 100%;
 	color: white;
 	font-size: 52px;
 	line-height: 100px;
 	text-align: center;
 	vertical-align: middle;
 	text-shadow: 5px 5px 8px #3F4247;
-	
-	background-color: #47A3FF;
+	/*background-color: #47A3FF;*/
 	border: 0px solid black;
-	border-bottom-left-radius:12px;	border-bottom-right-radius: 12px;
+	/*border-bottom-left-radius:12px;	border-bottom-right-radius: 12px;*/
 }
 
 #info
