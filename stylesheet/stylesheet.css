@@ -51,13 +51,14 @@ table {
 html
 {
 	height: 100%;
+	min-height: 100%;
 }
 
 .principal
 {
 	width: 859px;
+	height: auto;
 	margin-left: 342px;
-	height: 0px;
 }
 
 body
@@ -79,10 +80,10 @@ body
 
 .mainPage
 {
-	/*new*/background-image: url(../ressources/newbgbybibi.png);
+	background-image: url(../ressources/newbg.png);
 	background-repeat: no-repeat;
-	min-height: 100%;
-	max-height: 120%; /* à revoir */
+	height: 982px;
+	min-height: 100%
 }
 
 nav{	
@@ -274,12 +275,20 @@ img
 
 article h1
 {
-	height: 20px;
-	margin: 5px;
-	
+	height: 40px;
 	width: auto;
-	color: #47A3FF;
+	
+	margin: 10px;
+	padding-left: 32px;
+	
+	color: #3fbdbd;
 	font-size: 120%;
+	line-height: 40px;
+	
+	background-image: linear-gradient(to right, #000000,#3fbdbd 50%,rgba(255,255,255,0.5));
+	border-radius: 10px 30px;
+	box-shadow: 8px 8px 5px #444444;
+	vertical-align: middle;
 }
 
 article
