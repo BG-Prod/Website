@@ -20,14 +20,17 @@ data = dict()
 data['username'] = 'Obligatoire'
 data['useremail'] = 'Obligatoire'
 data['userpwd'] = 'Obligatoire'
+data['userpwdconf'] = 'Obligatoire'
 data['firstname'] = 'Facultatif'
 data['lastname'] = 'Facultatif'
 data['birthdate'] = 'Facultatif'
 
 form = cgi.FieldStorage()
 for name in form.keys():
-	if name.lower() == 'userpwd' or name.lower() == 'userpwdconf':
+	if name.lower() == 'userpwd':
 		data[name] = hashlib.sha512(form.getfirst(name).encode('utf-8')).hexdigest()
+	if name.lower() == 'userpwdconf':
+		
 	else:
 		data[name] = form.getfirst(name)
 
