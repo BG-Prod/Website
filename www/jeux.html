@@ -19,7 +19,27 @@
 	<body>
 		<div class="mainPage">
 			<aside class="gauche">
-				<p> Vous êtes à l'<strong> Accueil </strong> </p>
+				<p> Vous êtes dans la partie <strong> Jeux </strong> </p>
+				<section>
+					<form name="Login" class="login">
+											
+						<p>
+							<label for="username">
+								Nom d'utilisateur : 
+								</label>
+							<input type="text" id="username" name="username" size="32" maxlength="32" placeholder="Username">
+						</p>
+						
+						<p>
+							<label for="userpwd">
+								Mot de passe : 
+							</label>
+							<input type="password" id="userpwd" name="userpwd" size="32" maxlength="32" placeholder="Password">
+						</p>
+			
+						<p><INPUT id="envoyer" TYPE="submit" VALUE="Connexion"></p>
+					</form>
+				</section>
 				<section>
 					<h1> Style </h1>
 					<button id="styleNormal"> Normal </button>

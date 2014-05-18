@@ -58,6 +58,9 @@ html
 	width: 859px;
 	height: auto;
 	margin-left: 342px;
+	
+	background-color: rgba(255, 255, 255, 0.5);
+	background-size: 100% 100%;
 }
 
 body
@@ -70,7 +73,7 @@ body
 	background-position: center;
 	
 	margin: auto;
-	margin-bottom: 0;
+	margin-bottom: 0px;
 	
 	width: 1280px;
 	min-height: 100%;
@@ -82,7 +85,7 @@ body
 	background-image: url(../ressources/newbg.png);
 	background-repeat: no-repeat;
 	height: 982px;
-	min-height: 100%
+	min-height: 100%;
 }
 
 nav{	
@@ -190,6 +193,11 @@ aside button
 	width: 120px;
 }
 
+aside input
+{
+	width: 200px;
+}
+
 section
 {
 	/* Pour ne pas cacher ce qui serait tout en bas de la page
@@ -198,10 +206,12 @@ section
 	margin-bottom: 2em;
 }
 
-div.principal section
+/* div.principal section
 {
 	background-color: rgba(255, 255, 255, 0.5);
-}
+	height: inherit;
+	height: 100%;
+} */
 	
 .logo
 {
@@ -280,7 +290,8 @@ article h1
 	margin: 10px;
 	padding-left: 32px;
 	
-	color: #3fbdbd;
+	color: black;
+	text-shadow: 0px 0px 8px #3fbdbd;
 	font-size: 120%;
 	line-height: 40px;
 	
@@ -288,6 +299,11 @@ article h1
 	border-radius: 10px 30px;
 	box-shadow: 8px 8px 5px #444444;
 	vertical-align: middle;
+}
+
+article h1 strong
+{
+	text-shadow: none;
 }
 
 article
@@ -299,6 +315,7 @@ article p
 {
 	text-indent: 2em;
 	margin: 5px;
+	margin-top: 20px;
 }
 
 .arround
@@ -368,7 +385,7 @@ tr:nth-child(even)
 	line-height: 100px;
 	text-align: center;
 	vertical-align: middle;
-	text-shadow: 5px 5px 8px #3F4247;
+	text-shadow: 5px 5px 8px gray;
 	/*background-color: #47A3FF;*/
 	border: 0px solid black;
 	/*border-bottom-left-radius:12px;	border-bottom-right-radius: 12px;*/

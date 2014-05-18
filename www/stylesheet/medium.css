@@ -1,31 +1,33 @@
 .principal
 {
-	width:640px;
-	margin-left:0px;
+	width:537px;
+	height: auto;
+	margin-top: -37px;
+	margin-left: 52px;
 }
 
 .mainPage
 {
-	/*new*/background: url(../ressources/newbgbybibi640.png);
+	background: url(../ressources/newbg640.png);
 	background-repeat: no-repeat;
-	min-height: 10%;
+	height: 982px;
+	min-height: 100%
 }
 
 .gauche
 {
-	position: absolute;	top: 0px;
+	position: absolute;	top: -25px;
 }
 
 body
 {
-	margin:auto;
 	width:640px;
 	margin-bottom:2em;
 }
 
 nav ul li a
 {
-	width:85px;
+	width: 120px;
 }
 
 aside
@@ -48,6 +50,7 @@ aside h1
 {
 	margin-top: auto;	margin-bottom: auto;	margin-bottom: 2px;
 	padding: 0px;
+	color: white;
 }
 
 footer
@@ -58,4 +61,14 @@ footer
 footer:hover
 {
 	max-width:640px;
+}
+
+#titre
+{
+	margin-left: 50px;
+}
+
+.hide
+{
+	display:none;
 }
