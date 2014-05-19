@@ -161,9 +161,11 @@ footer:hover
 aside
 {
 	width: 226px;
-	position: fixed;
+	height: 420px;
+	position: absolute;
+	top: 240px;
 	margin-left: 88px;
-	margin-top: 240px;
+	/*margin-top: 240px;*/
 
 	border: 5px solid black;
 	border-color: #DCDCDC #696969 #696969 #DCDCDC;
@@ -177,10 +179,17 @@ aside
 	text-align: center;
 }
 
+aside section
+{
+	display: inline;
+	margin-top: 1em;
+	margin-bottom: 0px;
+}
+
 aside h1
 {
 	margin-top: 1em;
-	color: #005AB3;
+	color: white;
 }
 
 aside p
@@ -198,6 +207,12 @@ aside input
 	width: 200px;
 }
 
+.float
+{
+	position: fixed;
+	top: 5px;
+}
+
 section
 {
 	/* Pour ne pas cacher ce qui serait tout en bas de la page
@@ -205,24 +220,14 @@ section
 	 */
 	margin-bottom: 2em;
 }
-
-/* div.principal section
-{
-	background-color: rgba(255, 255, 255, 0.5);
-	height: inherit;
-	height: 100%;
-} */
 	
 .logo
 {
-	/*position: absolute;*/
-	bottom: 0px;
-	left: 10px;
-	
-	width: 140px;
+	text-align: center;
+
+	width: 100px;
 	height: auto;
 	
-	text-align: center;
 	opacity: 1;
 	
 	transition-duration: 1s;
@@ -380,11 +385,15 @@ tr:nth-child(even)
 {
 	height: 185px;
 	width: 100%;
+	
+	margin-left: 125px;
+	
 	color: white;
-	font-size: 52px;
-	line-height: 100px;
+	font-size: 100px;
+	line-height: 185px;
 	text-align: center;
-	vertical-align: middle;
+	
+	vertical-align: central;
 	text-shadow: 5px 5px 8px gray;
 	/*background-color: #47A3FF;*/
 	border: 0px solid black;

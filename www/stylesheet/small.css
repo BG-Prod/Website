@@ -1,3 +1,8 @@
+html
+{
+	min-width: 320px;
+}
+
 .gauche
 {
 	display: none;
@@ -31,7 +36,6 @@ nav
 }
 
 nav li {
-	margin-left:2px;
 	float:none;
 }
 
@@ -44,6 +48,33 @@ nav ul li a {
 	/*Effet 3d*/
 	border:2px solid;
 	border-color:#DCDCDC #696969 #696969 #DCDCDC;
+}
+
+aside 
+{
+	margin: 0px;
+	margin-left: -150px;
+	padding: 0px;
+}
+
+aside section
+{
+	display: none;
+}
+
+#location
+{
+	position: absolute;
+	top: 80px;
+	left: 170px;
+	width: 100%;
+	min-width: 320px;
+	
+	font-style: oblique;
+	
+	color: white;
+	/*line-height: 40px;*/
+	text-align: left;	
 }
 
 div.principal

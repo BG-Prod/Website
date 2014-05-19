@@ -4,11 +4,11 @@
 
 	<head>
 		<meta charset=utf-8>
-		<meta name="Author" content="Benjamin, Benoît">
+		<meta name="Author" content="Benjamin, Beno&icirc;t">
 		<title> BG PROD > Accueil </title>
 		<link rel="shortcut icon" type="icon/fluid-icon" href="./ressources/icon.png" />
 		
-		<link rel="stylesheet" title="Défaut" id="style" href="./stylesheet/stylesheet.css" />
+		<link rel="stylesheet" title="D&eacute;faut" id="style" href="./stylesheet/stylesheet.css" />
 		<link rel="alternate stylesheet" title="Mode nuit" href="./stylesheet/stylesheet_nuit.css" />
 		<link rel="alternate stylesheet" title="Mode original" href="./stylesheet/stylesheet.css" />
 		<link rel="alternate stylesheet" title="Mode basic" href="./stylesheet/reset.css" />
@@ -18,9 +18,9 @@
 
 	<body>
 		<div class="mainPage">
-			<aside class="gauche">
-				<p> Vous êtes dans la partie <strong> Inscription </strong> </p>
-				<section>
+			<aside class="">
+				<h1  id="location"> Vous &ecirc;tes dans la partie <strong> Inscription </strong> </h1>
+				<section id="login">
 					<form name="Login" class="login">
 											
 						<p>
@@ -40,7 +40,7 @@
 						<p><INPUT id="envoyer" TYPE="submit" VALUE="Connexion"></p>
 					</form>
 				</section>
-				<section>
+				<section id="style">
 					<h1> Style </h1>
 					<button id="styleNormal"> Normal </button>
 					<button id="styleNuit"> Nuit </button>
@@ -121,11 +121,13 @@
       
 		<footer>
 			<p id="info"> Informations </p>
-			<p>	Site web créé par Benjamin et Benoît pour le TP de web de la L2 Informatique afin de présenter leur projets communs. </p>
+			<p>	Site web cr&eacute;&eacute; par Benjamin et Beno&icirc;t pour le TP de web de la L2 Informatique afin de pr&eacute;senter leur projets communs. </p>
 		</footer>
 	
 		<!-- SCRIPTS -->
+		<script rel="javascript" src="./script/jquery.js"></script>
 		<script rel="javascript" src="./script/css.js"></script>
+		<script rel="javascript" src="./script/scroll.js"></script>
 		<script rel="javascript" src="./script/inscription.js"></script>
 	</body>
 </html>

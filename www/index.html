@@ -4,11 +4,11 @@
 
 	<head>
 		<meta charset=utf-8>
-		<meta name="Author" content="Benjamin, Benoît">
+		<meta name="Author" content="Benjamin, Beno&icirc;t">
 		<title> BG PROD > Accueil </title>
 		<link rel="shortcut icon" type="icon/fluid-icon" href="./ressources/icon.png" />
 		
-		<link rel="stylesheet" title="Défaut" id="style" href="./stylesheet/stylesheet.css" />
+		<link rel="stylesheet" title="D&eacute;faut" id="style" href="./stylesheet/stylesheet.css" />
 		<link rel="alternate stylesheet" title="Mode nuit" href="./stylesheet/stylesheet_nuit.css" />
 		<link rel="alternate stylesheet" title="Mode original" href="./stylesheet/stylesheet.css" />
 		<link rel="alternate stylesheet" title="Mode basic" href="./stylesheet/reset.css" />
@@ -18,11 +18,10 @@
 
 	<body>
 		<div class="mainPage">
-			<aside class="gauche">
-				<p> Vous êtes à l'<strong> Accueil </strong> </p>
-				<section>
+			<aside class="">
+				<h1 id="location"> Vous &ecirc;tes &agrave; l'<strong> Accueil </strong> </h1>
+				<section id="login">
 					<form name="Login" class="login">
-											
 						<p>
 							<label for="username">
 								Nom d'utilisateur : 
@@ -40,7 +39,7 @@
 						<p><INPUT id="envoyer" TYPE="submit" VALUE="Connexion"></p>
 					</form>
 				</section>
-				<section>
+				<section id="style">
 					<h1> Style </h1>
 					<button id="styleNormal"> Normal </button>
 					<button id="styleNuit"> Nuit </button>
@@ -68,13 +67,13 @@
 				<section>
 					
 					<article>
-					<h1> Présentation </h1>
+					<h1> Pr&eacute;sentation </h1>
 						<p> Bienvenue sur le site de BG Prod, sur lequel vous pouvez trouver nos projets.</p>
 					</article>
 
 					<article>
 					<h1> Jeux </h1>
-						<p> Depuis ses origines, BG PROD produit et encourage la création de jeux vidéos indépendants. Ils sont à l'origine de nombreux jeux incontournables. Vous trouverez des jeux exceptionnels, des jeux incroyables, des jeux fabuleux. Vous trouverez notamment :</p>
+						<p> Depuis ses origines, BG PROD produit et encourage la cr&eacute;ation de jeux vid&eacute;os ind&eacute;pendants. Ils sont &agrave; l'origine de nombreux jeux incontournables. Vous trouverez des jeux exceptionnels, des jeux incroyables, des jeux fabuleux. Vous trouverez notamment :</p>
 						<ul>
 							<li> <strong>Draughts</strong> : le jeux de dame </li>
 							<li> <strong>The Arvernes</strong> : le jeu de cartes le plus populaire au monde </li>
@@ -83,17 +82,17 @@
 
 					<article>
 					<h1> Pic </h1>
-						<p> Dans le cadre de la <em>Prep' ISIMA</em>, il nous a été demandé d'effectuer de la <strong>programmation sur carte Pic</strong>, et notamment de réaliser des jeux de lumière.
-	  Pour le moment, nous avons réussi a :	</p>
+						<p> Dans le cadre de la <em>Prep' ISIMA</em>, il nous a &eacute;t&eacute; demand&eacute; d'effectuer de la <strong>programmation sur carte Pic</strong>, et notamment de r&eacute;aliser des jeux de lumi&egrave;re.
+	  Pour le moment, nous avons r&eacute;ussi a :	</p>
 						<ul>
-							<li> Créer un compte de 0 à 9 secondes </li>
-							<li> Afficher une image sur un écran LCD </li>
+							<li> Cr&eacute;er un compte de 0 &agrave; 9 secondes </li>
+							<li> Afficher une image sur un &eacute;cran LCD </li>
 						</ul>
 					</article>
 
 					<article>
 					<h1> BG PROF </h1>
-						<p> En plus d'encourager la création de jeux vidéos et développer des applications sur des supports innovants comme le pic, BG PROD propose aussi un programme éducatif permettant à la jeunesse de s'entrainer aisément aux rudiments de la conjugaison et du calcul mental.</p>
+						<p> En plus d'encourager la cr&eacute;ation de jeux vid&eacute;os et d&eacute;velopper des applications sur des supports innovants comme le pic, BG PROD propose aussi un programme &eacute;ducatif permettant &agrave; la jeunesse de s'entrainer ais&eacute;ment aux rudiments de la conjugaison et du calcul mental.</p>
 					</article>
 				</section>
 			</div> <!-- class=principal -->
@@ -101,10 +100,12 @@
       
 		<footer>
 			<p id="info"> Informations </p>
-			<p>	Site web créé par Benjamin et Benoît pour le TP de web de la L2 Informatique afin de présenter leur projets communs. </p>
+			<p>	Site web cr&eacute;&eacute; par Benjamin et Beno&icirc;t pour le TP de web de la L2 Informatique afin de pr&eacute;senter leur projets communs. </p>
 		</footer>
 		
 		<!-- SCRIPTS -->
+		<script rel="javascript" src="./script/jquery.js"></script>
 		<script rel="javascript" src="./script/css.js"></script>
+		<script rel="javascript" src="./script/scroll.js"></script>
 	</body>
 </html>

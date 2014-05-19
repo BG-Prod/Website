@@ -14,11 +14,6 @@
 	min-height: 100%
 }
 
-.gauche
-{
-	position: absolute;	top: -25px;
-}
-
 body
 {
 	width:640px;
@@ -32,16 +27,64 @@ nav ul li a
 
 aside
 {
+	position: absolute;
+	top: 10px;
 	margin: 0px;
 	padding: 0px;
 	
 	background-color: transparent;
 	border: none;
 	
-	height: 100px;
+	height: 120px;
 }
 
-aside figure, aside p
+#location
+{
+	width: 400px;
+	position: absolute;
+	top: 80px;
+	left: 260px;
+	
+	text-align: left;
+	font-size: 20px;
+	font-style: oblique;
+}
+
+#location strong
+{
+	color: lightblue;
+}
+
+#style
+{
+	display: none;
+}
+
+#login
+{
+	position: absolute;
+	top: 0px;
+	left: 52px;
+}
+
+#login label
+{
+	display: none;
+}
+
+#login input
+{
+	margin: 0px;
+	width: 160px;
+}
+
+.float
+{
+	position: absolute;
+	top: 10px;
+}
+
+aside figure
 {
 	display: none;
 }
@@ -65,7 +108,9 @@ footer:hover
 
 #titre
 {
-	margin-left: 50px;
+	font-size: 60px;
+	line-height: 100px;
+	margin-left: 80px;
 }
 
 .hide
