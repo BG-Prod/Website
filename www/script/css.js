@@ -28,7 +28,7 @@ function styleDefault(){
 };
 
 function styleOrigin() {
-	stylesheet.href = "./stylesheet/stylesheet.css";
+	stylesheet.href = "./stylesheet/stylesheet_frenchy.css";
 };
 
 function styleReset() {
