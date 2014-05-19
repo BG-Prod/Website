@@ -9,6 +9,13 @@
 html
 {
 	min-height: 100%;
+	
+	background-image: linear-gradient(#3fbdbd, white);
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: center;
 }
 
 .principal
@@ -16,20 +23,14 @@ html
 	width: 859px;
 	height: auto;
 	margin-left: 342px;
+	margin-right: auto;
 	
 	background-color: rgba(255, 255, 255, 0.5);
 	background-size: 100% 100%;
 }
 
 body
-{
-	background-image: linear-gradient(#3fbdbd, white);
-	
-	background-repeat: no-repeat;
-	background-size: cover;
-	/*background-attachment: fixed;*/
-	background-position: center;
-	
+{	
 	margin: auto;
 	margin-bottom: 0px;
 	
@@ -347,7 +348,7 @@ tr:nth-child(even)
 #titre
 {
 	height: 185px;
-	width: 100%;
+	width: auto;
 	
 	margin-left: 125px;
 	

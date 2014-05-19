@@ -6,7 +6,7 @@
 *							*
 *****************************/
 
-body
+html
 {
 	background-color: black;
 	background-image: linear-gradient(to right, #0000BB, #FFFFFF, #BB0000);

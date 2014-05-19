@@ -41,7 +41,7 @@ aside
 
 #location
 {
-	width: 400px;
+	width: 300px;
 	position: absolute;
 	top: 80px;
 	left: 260px;
@@ -111,7 +111,7 @@ footer:hover
 {
 	font-size: 60px;
 	line-height: 100px;
-	margin-left: 80px;
+	margin-left: 160px;
 }
 
 .hide
