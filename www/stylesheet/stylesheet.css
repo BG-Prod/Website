@@ -306,6 +306,12 @@ figcaption
 	color: #47A3FF;	
 }
 
+.ancre
+{
+	text-decoration: none;
+	color: #0065AD;
+}
+
 table
 {
 	border-collapse:collapse;
