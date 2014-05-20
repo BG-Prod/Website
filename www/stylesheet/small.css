@@ -78,6 +78,13 @@ aside section
 	text-align: left;	
 }
 
+footer
+{
+	margin-left: 0px;
+	width: 100%;
+	max-width: 640px;
+}
+
 div.principal
 {
 	margin-top: 8em;

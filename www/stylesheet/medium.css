@@ -99,12 +99,7 @@ aside h1
 
 footer
 {
-	max-width:640px;
-}
-
-footer:hover
-{
-	max-width:640px;
+	max-width: 536px;
 }
 
 #titre
