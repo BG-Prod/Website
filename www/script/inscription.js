@@ -89,7 +89,7 @@ function verifBirthDate(){
 }
 
 function verifEmail(){
-	var mail = /^[0-9a-zA-Z.-_]+@[0-9a-z.-_]+\.[a-z]{2,}$/;
+	var mail = /^[0-9a-zA-Z.\-_]+@[0-9a-z.\-_]+\.[a-z]{2,}$/;
 	if(mail.test(useremail.value))
 	{
 		document.getElementsByClassName("formulaire")[3].setAttribute("src", "./ressources/ok.png");
@@ -111,7 +111,8 @@ function verifPseudo(){
 	}
 	else
 	{
-		document.getElementsByClassName("formulaire")[4].setAttribute("src", "./ressources/false.png");return false;
+		document.getElementsByClassName("formulaire")[4].setAttribute("src", "./ressources/false.png");
+		return false;
 	}
 }
 
