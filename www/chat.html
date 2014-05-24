@@ -74,12 +74,12 @@
 						</p>
 						<div id="chat">
 							<form name="Chatget" method="GET" action="./htbin/chatget.py">
-								<input type="text" id="viewmessage" name="viewmessage" size="3" maxlength="2048">
+								<input type="text" id="viewmessage" name="viewmessage" size="32" maxlength="2048">
 							</form>
 							
-							<form name="Chatsend" method="POST" action="./htbin/chatsend.py">
+							<form name="Chatsend" id="chatsend">
 								<input type="text" id="msg" name="msg" size="32" maxlength="128" placeholder="Enter message here...">
-								<INPUT id="envoyer" TYPE="submit" VALUE="Envoyer">
+								<INPUT id="post" TYPE="submit" VALUE="Envoyer">
 							</form>
 						</div> <!-- id=chatbox -->
 					</article>
@@ -97,5 +97,6 @@
 		<script rel="javascript" src="./script/jquery.js"></script>
 		<script rel="javascript" src="./script/css.js"></script>
 		<script rel="javascript" src="./script/scroll.js"></script>
+		<script rel="javascript" src="./script/chat.js"></script>
 	</body>
 </html>
