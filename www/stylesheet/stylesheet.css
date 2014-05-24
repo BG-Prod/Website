@@ -380,3 +380,42 @@ tr:nth-child(even)
 	height: 1em;
 	width: auto;
 }
+
+#chat
+{
+	height: 320px;
+	width: 500px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	border: 1px solid black
+}
+
+#chat input
+{
+	margin: 0px;
+}
+
+#chat #msg
+{
+	border: none;
+
+	height:20px;
+	width: 425px;
+}
+
+#chat #envoyer
+{
+	width: 70px;
+	float: right;
+}
+
+#chat #viewmessage
+{
+	border: none;
+	border-bottom: 1px solid black;
+	
+	height: 295px;
+	width: 498px;
+}
