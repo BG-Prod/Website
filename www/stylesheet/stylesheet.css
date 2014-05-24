@@ -413,9 +413,19 @@ tr:nth-child(even)
 
 #chat #viewmessage
 {
-	border: none;
 	border-bottom: 1px solid black;
 	
+	background-color: white;
+	overflow: auto;
 	height: 295px;
 	width: 498px;
+}
+
+#chat #viewmessage p
+{
+	font-size: 1em;
+	margin : 0px;
+	padding-left: 2px;
+	line-height: 1.4em;
+	text-align: middle;
 }

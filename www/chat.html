@@ -73,9 +73,9 @@
 							Bienvenue sur la chatbox dans laquelle vous pouvez discuter avec des personnes du monde entier (enfin pour le moment vous parlerez surtout avec vous-m&ecirc;me).
 						</p>
 						<div id="chat">
-							<form name="Chatget" method="GET" action="./htbin/chatget.py">
-								<input type="text" id="viewmessage" name="viewmessage" size="32" maxlength="2048">
-							</form>
+							<div id="viewmessage">
+								<!-- Div pour l'affichage des messages -->
+							</div>
 							
 							<form name="Chatsend" id="chatsend">
 								<input type="text" id="msg" name="msg" size="32" maxlength="128" placeholder="Enter message here...">
@@ -97,6 +97,6 @@
 		<script rel="javascript" src="./script/jquery.js"></script>
 		<script rel="javascript" src="./script/css.js"></script>
 		<script rel="javascript" src="./script/scroll.js"></script>
-		<script rel="javascript" src="./script/chat.js"></script>
+		<script rel="javascript" src="./script/chatsend.js"></script>
 	</body>
 </html>
