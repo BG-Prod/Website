@@ -1,0 +1,16 @@
+/**************************************
+
+	Envoi de message
+
+***************************************/
+(function(){
+
+	$('#post').click(function(e){
+		e.preventDefault(); //
+
+		var message = document.getElementById('msg').value; //message entre
+
+		$.ajax({url : "./htbin/chatsend.py", type : "POST", data : message});
+	});
+
+}());
