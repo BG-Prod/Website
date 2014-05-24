@@ -31,7 +31,7 @@ firstname.onblur = verifFirstName;
 birthdate.onblur = verifBirthDate;
 useremail.onblur = verifEmail;
 username.onblur = verifPseudo;
-userpwd.onblur = verifPwds;
+userpwd.onblur = verifPwd;
 userpwdconf.onblur = verifPwds;
 
 // Implementation des fonctions
@@ -103,7 +103,7 @@ function verifEmail(){
 }
 
 function verifPseudo(){
-	var psd = /^[\w]{6,}$/;
+	var psd = /^[\w]{8,}$/;
 	if(psd.test(username.value))
 	{
 		document.getElementsByClassName("formulaire")[4].setAttribute("src", "./ressources/ok.png");
