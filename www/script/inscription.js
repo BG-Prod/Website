@@ -15,7 +15,7 @@ bEffacer.addEventListener("click", function() {
 	}
 });
 
-var bEnvoyer = document.getElementById("envoyer");
+var bEnvoyer = document.getElementById("envoyerIns");
 bEnvoyer.addEventListener("click", function() {
 	if(verifBirthDate() && verifEmail() && verifFirstName() && verifLastName() && verifPseudo() && verifPwd() && verifPwdConf()) {
 		alert("Inscription réussie !");
@@ -103,7 +103,7 @@ function verifEmail(){
 }
 
 function verifPseudo(){
-	var psd = /^[\w]{8,}$/;
+	var psd = /^[\w]{6,}$/;
 	if(psd.test(username.value))
 	{
 		document.getElementsByClassName("formulaire")[4].setAttribute("src", "./ressources/ok.png");

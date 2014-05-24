@@ -1,4 +1,9 @@
-(function()
+var connect = document.getElementById("envoyer");
+connect.addEventListener("click", function() {
+	verifCo();
+});
+
+function verifCo()
 {
 	var formulaire = document.getElementById("login");
 	
@@ -20,25 +25,27 @@
 		{ 
 		   if(xhr.readyState  == 4)
 		   {
-			if(xhr.status  == 200) 
-				document.ajax.dyn="Received:"  + xhr.responseText; 
+			if(xhr.status  == 200)
+			{
+				var text = document.createElement(xhr.responseText());
+
+				text.replaceChild(document.createTextNode("Texte"),document.getElementById("login").firstChild);
+			}
 			else
+			{
 				document.ajax.dyn="Error code " + xhr.status;
 			}
 		}; 
 	 
 	   xhr.open( "POST", "./htbin/login.py",  true);
 	   
-	   var username = getElementById("username");
-	   var passwd = getElementById("userpwd");
+	   var username = document.getElementById("username");
+	   var passwd = document.getElementById("userpwd");
+	   
+	   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	   
 	   xhr.send("username="+username.innerText + "&" + "userpwd=" + passwd.innerText);
 	   
-	   var text = document.createElement("p");
-	   text.appendChild(document.createTextNode("Texte"));
-	   
-	   formulaire.appendChild(text);
-	   
 	   return false;
 	};
-}());
+}
