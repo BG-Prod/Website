@@ -21,17 +21,25 @@ chat.onsubmit = function() {
 		}
 	}
 	
-	req.onreadystatechange  = function() { 
-	   if(req.readyState  == 4 && req.status  == 200)
-			document.ajax.dyn="Received:"  + req.responseText; 
-		else
-			document.ajax.dyn="Error code " + req.status;
-	};
+	var params = "num=0&msg=";
 	
-	req.open( "POST", "./htbin/chatsend.py",  true);
 	var message = getElementById("msg");
-	   
-	req.send("num=0" + "&" + "msg=" + msg.innerText);  
+	var params = params + message.innerText;
+	
+	req.open("POST", "./htbin/chatsend.py", true);
+	
+	req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	req.setRequestHeader("Content-length", params.length);
+	req.setRequestHeader("Connection", "close");	
+	
+	req.onreadystatechange  = function() { 
+   if(req.readyState  == 4 && req.status  == 200)
+		document.ajax.dyn="Received:"  + req.responseText; 
+	else
+		document.ajax.dyn="Error code " + req.status;
+	};
+
+	req.send(params);  
 	   
 	return false;
 };
