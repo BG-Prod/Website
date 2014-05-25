@@ -13,7 +13,7 @@ function verifCo()
 	var welcome = document.createElement('section');
 
 		var nom = document.createElement('p');
-			nom.appendChild(document.createTextNode("Bienvenue " + username.value));
+			nom.appendChild(document.createTextNode(username.value));
 
 		var lienChat = document.createElement('a');
 			lienChat.setAttribute('href', './chat.html');
