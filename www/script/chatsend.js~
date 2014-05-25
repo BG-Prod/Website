@@ -24,7 +24,8 @@
 			}
 
 		$.ajax({url : "./htbin/chatsend.py", type : "POST", data : "num="+error+"&msg="+message});
-		m.value = "";
 	});
+	
+	m.value = null;
 
 }());
