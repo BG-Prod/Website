@@ -142,7 +142,7 @@ aside
 	text-align: center;
 }
 
-aside section
+aside div
 {
 	display: inline;
 	margin-top: 1em;
@@ -150,6 +150,12 @@ aside section
 }
 
 aside h1
+{
+	margin-top: 1em;
+	color: white;
+}
+
+aside h2
 {
 	margin-top: 1em;
 	color: white;
@@ -176,7 +182,7 @@ aside input
 	top: 5px;
 }
 
-section
+main
 {
 	/* Pour ne pas cacher ce qui serait tout en bas de la page
 	 * a cause du footer
@@ -209,12 +215,12 @@ section
 	width: 100px;
 }
 
-section ul
+main ul
 {
 	margin-left: 40px;
 }
 
-section ul li
+main ul li
 {
 	list-style-type: circle;
 }
@@ -250,7 +256,7 @@ img
 	height: auto;
 }
 
-article h1
+article h2
 {
 	height: 40px;
 	width: auto;
@@ -269,7 +275,7 @@ article h1
 	vertical-align: middle;
 }
 
-article h1 strong
+article h2 strong
 {
 	text-shadow: none;
 }
