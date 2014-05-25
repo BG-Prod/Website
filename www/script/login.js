@@ -29,7 +29,7 @@ function verifCo()
 			{
 				var text = document.createElement(xhr.responseText());
 
-				text.replaceChild(document.createTextNode("Texte"),document.getElementById("login").firstChild);
+				formulaire.replaceChild(text,document.getElementById("login").firstChild);
 			}
 			else
 			{
@@ -37,7 +37,7 @@ function verifCo()
 			}
 		}; 
 	 
-	   xhr.open( "POST", "./htbin/login.py",  true);
+	   xhr.open( "POST", "../htbin/login.py",  true);
 	   
 	   var username = document.getElementById("username");
 	   var passwd = document.getElementById("userpwd");
