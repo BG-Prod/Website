@@ -46,7 +46,7 @@ function verifCo()
 
 				//formulaire.replaceChild(text,document.getElementById("login").firstChild);
 				formulaire.appendChild(welcome);
-				//formulaire.setAttribute("style", "display : none;");
+				formulaire.setAttribute("style", "display : none;");
 			}
 			else
 			{
