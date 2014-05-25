@@ -1,5 +1,5 @@
 //Recuperation de la feuille de style
-var stylesheet = window.document.getElementById("style");
+var stylesheet = window.document.getElementById("chosenStyle");
 
 //Bouton du style normal
 var button1 = window.document.getElementById("styleNormal");
